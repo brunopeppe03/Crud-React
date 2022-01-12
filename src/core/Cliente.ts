@@ -2,13 +2,11 @@ export default class Cliente {
     #id: string
     #nome: string
     #idade: number
-    #insulina: boolean
 
-    constructor(nome: string, idade: number, id: string = null ,insulina = false){
+    constructor(nome: string, idade: number, id: string = null ){
         this.#nome = nome
         this.#idade = idade
         this.#id = id
-        this.#insulina= insulina
 
     }
 
@@ -26,8 +24,5 @@ export default class Cliente {
 
     get idade() {
         return this.#idade
-    }
-    get insulina(){
-        return this.#insulina
     }
 }

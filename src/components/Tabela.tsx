@@ -17,7 +17,6 @@ export default function Tabela(props: TabelaProps) {
                 <th className="text-left p-4">Codigo</th>
                 <th className="text-left p-4">Nome</th>
                 <th className="text-left p-4">Idade</th>
-                <th className="text-left p-4">Insulina</th>
                 {exibirAçoes ?  <th className="p-4">Açoes</th> : false}
             </tr>
         )
@@ -33,7 +32,6 @@ export default function Tabela(props: TabelaProps) {
                     <td className="text-left p-4">{cliente.id}</td>
                     <td className="text-left p-4">{cliente.nome}</td>
                     <td className="text-left p-4">{cliente.idade}</td>
-                    <td className="text-left p-4">{(cliente.insulina)?"insulinado":"frango"}</td>
                     { exibirAçoes ? renderizarAçoes(cliente) : false}
                 </tr>
             )
